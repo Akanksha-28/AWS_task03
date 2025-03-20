@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>task08-group</groupId>
-    <artifactId>task08</artifactId>
+    <groupId>task04-group</groupId>
+    <artifactId>task04</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -31,39 +31,6 @@
             <artifactId>deployment-configuration-annotations</artifactId>
             <version>${syndicate.java.plugin.version}</version>
         </dependency>
-
-        <!-- AWS SDK for S3 -->
-        <dependency>
-            <groupId>com.amazonaws</groupId>
-            <artifactId>aws-java-sdk-s3</artifactId>
-            <version>1.12.596</version>
-        </dependency>
-
-        <!-- JSON Serialization (Jackson) -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.15.2</version>
-        </dependency>
-
-        <!-- Logging -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>2.0.9</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>2.0.9</version>
-        </dependency>
-
-        <!--        &lt;!&ndash; Syndicate Annotations (Replace repo URL if required) &ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.syndicate.deployment</groupId>-->
-        <!--            <artifactId>annotations</artifactId>-->
-        <!--            <version>1.0.0</version>-->
-        <!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -80,7 +47,7 @@
                 <version>${syndicate.java.plugin.version}</version>
                 <configuration>
                     <packages>
-                        <package>com.task08</package>
+                        <package>com.task04</package>
                     </packages>
                     <fileName>${project.name}-${project.version}.jar</fileName>
                 </configuration>
@@ -124,4 +91,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
